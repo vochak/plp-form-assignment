@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form method="post" action="/submit_form.php">
+        
+        <label for="name">Enter Your First Name: 
+        <input id="name" name="name" type="text" required /></label>
+        <label for="birthdate">Date of Birth:
+        <input type="date" id="birthdate" name="birthdate"> </label>
+
+
+<label> whats your gender?
+<select id="gender" name="gender">
+    <option value="">(select one)</option>
+    <option value="1">male</option>
+    <option value="2">female</option>
+    
+  </select>
+  </label>
+  <label for="address">Address:
+  <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+</label>
+
+<label for="phone">Phone number:
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+</label>
+<label for="email">whats your course?  : 
+    <input  required /></label>
+    <select>
+        <option value="">(select one)</option>
+        <option value="1">python</option>
+        <option value="2">java</option>
+        <option value="3">html css</option>
+        <option value="4">Other</option>
+      </select>
+    </form>
+    <button type="submit">register</button>
+    <button type="submit">cancel</button>
+</body>
+</html>
